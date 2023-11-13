@@ -10,7 +10,7 @@
   --product-bg: hsl(0, 0%, 100%);
   --product-text: hsl(228, 12%, 48%);
 
-  --button-active: hsl(212, 21%, 14%);
+  --button-active: hsl(143, 23%, 22%);
 }
 
 .perfume__img > img {
@@ -45,6 +45,7 @@ main {
 .perfume__img > img {
   width: 100%;
   border-radius: 10px 0 0 10px;
+  display: block;
 }
 
 .perfume__product {
@@ -115,4 +116,71 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.perfume--add:hover {
+  background-color: var(--button-active);
+}
+
+.attribution {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  .perfume__img > img {
+    content: url(./images/image-product-mobile.jpg);
+    border-radius: 10px 10px 0 0;
+  }
+
+  .perfume__img {
+    height: fit-content;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .perfume__name {
+    font-size: 32px;
+  }
+
+  .perfume__descr {
+    font-size: 16px;
+  }
+
+  main {
+    height: auto;
+  }
+
+  .perfume__container {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .perfume__product {
+    border-radius: 0 0 10px 10px;
+    height: auto;
+  }
+
+  .perfume__product--box {
+    margin-bottom: 20px;
+  }
+
+  .perfume__container,
+  .perfume__img,
+  .perfume__product {
+    width: 85%;
+  }
+
+  .attribution {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .perfume__container,
+  .perfume__img,
+  .perfume__product {
+    width: 95%;
+  }
 }
