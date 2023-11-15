@@ -79,6 +79,7 @@ main,
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 6px;
+  text-transform: uppercase;
 }
 
 .perfume__name {
@@ -119,10 +120,12 @@ main,
   border-radius: 10px;
   gap: 10px;
   color: var(--product-bg);
+  font-weight: bold;
   background-color: var(--primary);
 }
 
 .perfume--add:hover {
+  cursor: pointer;
   background-color: var(--button-active);
 }
 
